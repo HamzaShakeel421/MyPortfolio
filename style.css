@@ -3402,6 +3402,7 @@ section {
     cursor: pointer;
     padding: 0;
     z-index: 1000;
+    position: relative;
 }
 
 .nav-mobile-btn span {
@@ -3530,6 +3531,13 @@ section {
         gap: 1.5rem;
     }
 
+    .bento {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    .bc-6, .bc-4, .bc-full, .bc-3, .bc-2 {
+        grid-column: span 2 !important;
+    }
+
     .services-premium-grid {
         grid-template-columns: repeat(2, 1fr) !important;
         gap: 1.8rem;
@@ -3545,6 +3553,13 @@ section {
     .stats-grid {
         grid-template-columns: 1fr !important;
         gap: 1.2rem;
+    }
+
+    .bento {
+        grid-template-columns: 1fr !important;
+    }
+    .bc-6, .bc-4, .bc-full, .bc-3, .bc-2 {
+        grid-column: span 1 !important;
     }
 
     .services-premium-grid {
