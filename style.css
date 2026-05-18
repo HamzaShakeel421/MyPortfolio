@@ -519,6 +519,7 @@ section {
 .container {
     max-width: 1260px;
     margin: 0 auto;
+    padding: 0 6vw;
 }
 
 .s-label {
@@ -3700,5 +3701,18 @@ section {
 
     .accordion-title {
         font-size: 1rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr !important;
+        gap: 2rem;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+        padding-top: 2rem;
     }
 }
